@@ -10,7 +10,6 @@ body {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     line-height: 1.6;
-    /* scroll-behavior: smooth; */
 }
 .container {
     max-width: 1199px;
@@ -798,11 +797,6 @@ footer .footer_copyright .footer_left span {
     visibility: visible;
     opacity: 1;
 }
-
-
-
-
-
 
 
 
