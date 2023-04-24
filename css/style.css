@@ -12,10 +12,10 @@ body {
     line-height: 1.6;
     /* scroll-behavior: smooth; */
 }
-/* .container {
+.container {
     max-width: 1199px;
     margin: auto;
-} */
+}
 /* Header  */
 header {
     position: absolute;
@@ -524,7 +524,6 @@ header .header_content i {
     grid-row: 2 / 4;
 }
 
-
 /* blog */
 .blog {
     background-image: url(./../img/bg16.png);
@@ -546,19 +545,21 @@ header .header_content i {
     color: #262626;
     margin-bottom: 20px;
 }
-.blog_item {
+
+.blog .blog_content .item {
     text-align: left;
     background: #FEEFF3;
     border-radius: 8px;
 }
-.blog_header {
+
+.blog .item .blog_item .blog_header {
     position: relative;
 }
-.blog_header img {
+.blog .blog_content .item .blog_header img {
     width: 100%;
     border-radius: 8px;
 }
-.blog_header p {
+.blog .blog_content .item .blog_header p {
     background-image: linear-gradient(to right, #f55f8d 0, #f8ae56 51%, #f55f8d 100%);
     background-size: 200%;
     border-radius: 6px;
@@ -566,21 +567,21 @@ header .header_content i {
     font-size: 14px;
     color: white;
     position: absolute;
-    bottom: -20px;
+    bottom: 240px;
     left: 15px;
 }
-.blog_body {
+.blog .blog_content .item .blog_body {
     padding: 30px 15px 20px 15px;
     line-height: 1.4;
     margin-bottom: 20px;
     text-align: left;
 }
-.blog_body h3 {
+.blog .blog_content .item .blog_body h3 {
     font-size: 1.5rem;
     font-weight: 700;
     color: #262626;
 }
-.blog_footer {
+.blog .blog_content .item .blog_footer {
     display: flex;
     align-items: center;
     padding: 15px;
@@ -589,15 +590,15 @@ header .header_content i {
     font-size: 14px;
     border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
-.blog_footer i {
+.blog .blog_content .item.blog_footer i {
     font-size: 22px;
     color: #f55f8d;
     vertical-align: sub;
 }
-.blog_footer p:first-of-type {
+.blog .blog_content .item .blog_footer p:first-of-type {
     margin-right: 20px;
 }
-.blog_footer p:first-of-type span {
+.blog .blog_content .item .blog_footer p:first-of-type span {
     color: #f55f8d;
 }
 
